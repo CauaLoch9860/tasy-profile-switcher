@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "HUC - Localizar Perfil e favoritos",
+  "version": "2.0",
+  "description": "Troca de perfil com um atalho de teclado.",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "switch-profile": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F"
+      },
+      "description": "Troca de perfil com um atalho de teclado."
+    }
+  }
+}
